@@ -28,10 +28,8 @@ target_link_libraries(io.gitgud.catpswin56.volume
                       KF6::Svg
                       KF6::ConfigCore
                       KF6::ConfigGui
-                      KF6::CoreAddons)
-
-
-include_directories(/usr/include/Plasma /usr/include/PlasmaQuick /usr/include/KF6/KConfigCore/ /usr/include/KF6/KConfig/ /usr/include/KF6/KCoreAddons/)
+                      KF6::CoreAddons
+                      KF6::KirigamiPlatform)
 
 install(TARGETS io.gitgud.catpswin56.volume DESTINATION ${KDE_INSTALL_PLUGINDIR}/plasma/applets)
 

@@ -23,6 +23,7 @@ find_package(Qt6 REQUIRED COMPONENTS
 )
 
 add_subdirectory(plasma)
+add_subdirectory(kwin)
 if(NOT INSTALL_X11_COMPONENTS)
     add_subdirectory(misc)
     add_subdirectory(libpositionmanager)

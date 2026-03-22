@@ -14,16 +14,13 @@ target_link_libraries(io.gitgud.catpswin56.vistatasks
                       Qt6::Quick
                       KF6::I18n
                       KF6::WindowSystem
-                      Plasma
-                      PlasmaQuick
+                      Plasma::Plasma
+                      Plasma::PlasmaQuick
                       KF6::Svg
                       KF6::ConfigCore
                       KF6::ConfigGui
-                      KF6::CoreAddons)
-
-
-#target_link_libraries(plasma_applet_seventasks KF5::WindowSystem)
-include_directories(/usr/include/Plasma /usr/include/KF6/KConfigCore/ /usr/include/KF6/KConfig/ /usr/include/KF6/KCoreAddons/ /usr/include/PlasmaQuick/)
+                      KF6::CoreAddons
+                      KF6::KirigamiPlatform)
 
 install(TARGETS io.gitgud.catpswin56.vistatasks DESTINATION ${KDE_INSTALL_PLUGINDIR}/plasma/applets)
 
