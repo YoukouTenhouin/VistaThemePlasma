@@ -25,6 +25,7 @@ find_package(Qt6 CONFIG REQUIRED COMPONENTS
 )
 
 find_package(Plasma 6.0.0 REQUIRED)
+find_package(PlasmaQuick REQUIRED)
 find_package(KF6CoreAddons)
 
 add_subdirectory(src)

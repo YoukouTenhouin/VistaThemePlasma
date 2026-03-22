@@ -29,6 +29,7 @@ find_package(Qt6 CONFIG REQUIRED
 )
 
 find_package(Plasma 6.0.0 REQUIRED)
+find_package(PlasmaQuick REQUIRED)
 
 add_subdirectory(src)
 
